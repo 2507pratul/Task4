@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>💰 Dynamic Expense Tracker</h1>
+      <p>Track your expenses effortlessly!</p>
+    </header>
+
+    <!-- Expense Input Section -->
+    <section class="expense-input">
+      <h2>Add New Expense</h2>
+      <form id="expenseForm">
+        <input type="text" id="expenseName" placeholder="Expense Name" required>
+        <input type="number" id="expenseAmount" placeholder="Amount ($)" required>
+        <input type="date" id="expenseDate" required>
+        <button type="submit">Add Expense</button>
+      </form>
+    </section>
+
+    <!-- Summary Section -->
+    <section class="expense-summary">
+      <h2>Summary</h2>
+      <div class="summary-details">
+        <p>Total Expenses: <span id="totalExpenses">$0.00</span></p>
+        <p>Items Count: <span id="expenseCount">0</span></p>
+      </div>
+    </section>
+
+    <!-- Expense List -->
+    <section class="expense-list">
+      <h2>Expense List</h2>
+      <ul id="expenseList">
+        <!-- Dynamic content will go here -->
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

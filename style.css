@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f1dbd0, #6f5d5d);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  /* Expense Input Section */
+  .expense-input {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expense-input input, .expense-input button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .expense-input button {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .expense-input button:hover {
+    background-color: #ffcc33;
+    transform: scale(1.05);
+  }
+  
+  /* Expense Summary Section */
+  .expense-summary {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .summary-details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+  
+  /* Expense List Section */
+  .expense-list {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expense-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .expense-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .expense-list li:hover {
+    transform: scale(1.02);
+  }
+  
+  .expense-list .expense-name {
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
